@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--
+      🧠 PROJECT TITLE: SEO Profile Card
+
+      ✅ WHAT YOU ARE PRACTICING (HTML Essentials)
+      - HTML Structure (doctype, html, head, body)
+      - Meta Tags & SEO (charset, viewport, description, keywords, author)
+      - Headings + Paragraphs
+      - Divs + Spans (grouping + styling hooks)
+      - Lists (ul/ol)
+      - Tables (table, thead, tbody, tr, th, td)
+      - Forms + User Input (form, label, input, select, textarea, button)
+
+      🎯 PROJECT GOAL
+      Build a simple personal profile landing page that practices HTML structure, meta tags for SEO, headings/paragraphs, div/span grouping, lists, a small table, and a contact form.
+
+    -->
+
+    <!-- STEP 1 — Add your basic meta tags -->
+    <!--
+      Inside <head>, add:
+      1) <meta charset="UTF-8">
+      2) <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      3) <title>...</title> (use a title that matches this project)
+      4) <meta name="description" content="..."> (short: 1–2 sentences)
+      5) <meta name="keywords" content="..."> (comma-separated keywords)
+      6) <meta name="author" content="...">
+    -->
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Jared Stander's SEO Profile Card</title>
+      <meta name="description" content="The SEO Profile Card of Jared Stander. Learn more about Jared Stander" />
+      <meta name="keywords" content="SEO, Profile, Card, Jared, Stander, Jared Stander, Landing Page" />
+      <meta name="author" content="Jared Stander" />
+
+    <!-- STEP 2 — Link your CSS file (optional but recommended) -->
+    <!--
+      Add: <link rel="stylesheet" href="styles.css">
+      Even if the focus is HTML, a tiny bit of CSS helps you *see* your structure.
+    -->
+      <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <!-- STEP 3 — Create a semantic page layout -->
+    <!--
+      Create the main layout using semantic tags:
+      - <header> for the top section
+      - <main> for the main content
+      - <footer> for the bottom section
+      Tip: Wrap everything in a <div class="page"> if you want a single container.
+    -->
+
+    <!-- STEP 4 — Header content (Headings + span) -->
+    <!--
+      Inside <header>, add:
+      - One <h1> with your name or brand
+      - One <p> that describes you in 1–2 lines
+      - Inside that <p>, wrap ONE important word in a <span class="small">...</span> OR <span>...</span>
+        (Example idea: "Front-End" or "Mentor")
+    -->
+
+    <!-- STEP 5 — Main content with 2 sections (Divs + Lists) -->
+    <!--
+      Inside <main>, create a <div class="grid-2"> to hold two cards side-by-side (on desktop).
+      Card A: <section class="card"> with:
+      - <h2>About</h2>
+      - 2–3 <p> lines about the person/brand
+      Card B: <section class="card"> with:
+      - <h2>Skills</h2>
+      - A <ul> list of at least 5 skills
+      - A <p class="small"> note under the list
+    -->
+
+    <!-- STEP 6 — Add a small table (Tables) -->
+    <!--
+      Below the cards, add another <section class="card"> with:
+      - <h2>Weekly Focus</h2>
+      - A <table> with a <thead> and <tbody>
+      - Include 3 rows in <tbody> (example: Day / Topic / Goal)
+    -->
+
+    <!-- STEP 7 — Add a contact form (Forms) -->
+    <!--
+      Add another <section class="card"> with:
+      - <h3>Contact</h3>
+      - A <form> that contains:
+        1) Name input (text)
+        2) Email input (email)
+        3) Reason dropdown (select with 3 options)
+        4) Message textarea
+        5) Submit button
+      Important: each input MUST have a matching <label> with for/id.
+    -->
+
+    <!-- STEP 8 — Footer (Structure) -->
+    <!--
+      Inside <footer>, add:
+      - A <p> with copyright text
+      - An <ol> with 3 quick links you *would* add (just placeholders)
+    -->
+
+    <!-- STEP LAST — Validate your HTML -->
+    <!--
+      Quick self-check:
+      ✅ Do you have ONLY ONE <h1>?
+      ✅ Are your headings in order? (h1 → h2 → h3)
+      ✅ Does every <label> connect to an input using for="..." and id="..."?
+      ✅ Does your table have <thead> and <tbody>?
+      ✅ Did you use BOTH a list and a table somewhere?
+      ✅ Did you use a <span> to style a *small* piece of text inside a bigger element?
+    -->
+      <div class="page">
+        <header>
+          <h1>Jared Stander</h1>
+          <p>Jared is a <span class="small">full-stack developer</span> who enjoys coffee, keyboards, code.</p>
+        </header>
+        <main>
+          <div class="grid-2">
+            <section class="card">
+              <h2>About</h2>
+              <p>Jared is from New England and enjoys long walks and Autumn foliage. He also enjoys a nice, warm cup of coffee on a chilly day.</p>
+            </section>
+            <section class="card">
+              <h2>Skills</h2>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+                <li>PHP</li>
+                <li>Linux</li>
+              </ul>
+              <p class="small">Note: This list is incomplete and always growing!</p>
+            </section>
+            <section class="card">
+              <h2>Weekly Focus</h2>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Day</th>
+                    <th>Topic</th>
+                    <th>Goal</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Sunday</td>
+                    <td>Prepare</td>
+                    <td>Have an intention for each day</td>
+                  </tr>
+                  <tr>
+                    <td>Monday</td>
+                    <td>Start Strong</td>
+                    <td>Cover at least 1 new topic</td>
+                  </tr>
+                  <tr>
+                    <td>Tuesday</td>
+                    <td>Continue Momentum</td>
+                    <td>Cover at least 1 additional topic</td>
+                  </tr>
+                  <tr>
+                    <td>Wednesday</td>
+                    <td>Reinforce</td>
+                    <td>Review previous topics with exercises</td>
+                  </tr>
+                  <tr>
+                    <td>Thursday</td>
+                    <td>Review</td>
+                    <td>Get feedback on previous topics and exercises</td>
+                  </tr>
+                  <tr>
+                    <td>Friday</td>
+                    <td>Wind Down</td>
+                    <td>Cover some material but make room to connect with peers</td>
+                  </tr>
+                  <tr>
+                    <td>Saturday</td>
+                    <td>Reflect</td>
+                    <td>Summarize the week and reflect on my progress</td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+            <section class="card">
+              <h3>Contact</h3>
+              <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" required />
+                <br />
+                <label for="email">Email:</label>
+                <input type="email" id="email" required />
+                <br />
+                <label for="reason">Reason:</label>
+                <select id="reason" required>
+                  <option value="">Select a Reason</option>
+                  <option value="network">Networking Request</option>
+                  <option value="mentoring">Mentoring Advice</option>
+                  <option value="job">Career Opportunity</option>
+                </select>
+                <br />
+                <label for="message">Message:</label>
+                <textarea id="message"></textarea>
+                <br />
+                <button type="submit">Submit</button>
+              </form>
+            </section>
+          </div>
+        </main>
+        <footer>
+          <p>&copy; Jared Stander 2026</p>
+          <ol>
+            <li><a href="#">Personal Website</a></li>
+            <li><a href="#">Github Profile</a></li>
+            <li><a href="#">Leetcode Profile</a></li>
+          </ol>
+        </footer>
+      </div>
+  </body>
+</html>
